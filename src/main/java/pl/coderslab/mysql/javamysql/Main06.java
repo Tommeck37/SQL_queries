@@ -31,3 +31,4 @@ public class Main06 {
         }
     }
 }
+//komentarz testowy
