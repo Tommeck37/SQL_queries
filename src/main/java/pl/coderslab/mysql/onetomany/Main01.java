@@ -1,7 +1,8 @@
 package pl.coderslab.mysql.onetomany;
 
 public class Main01 {
-    private String create = "create table opinions (id int auto_increment, product_id int not null, description varchar(500), primary key (id), foreign key (product_id) references products(id));";
+    private String create = "create table opinions (id int auto_increment, product_id int not null, description varchar(500), primary key (id), " +
+            "foreign key (product_id) references products(id));";
 
     private String query1 = "insert into products (name, description, price) values ('Produkt 1', 'Opis 1', 10.10);";
     private String query2 = "insert into products (name, description, price) values ('Produkt 2', 'Opis 2', 10.20);";

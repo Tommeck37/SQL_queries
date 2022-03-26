@@ -1,7 +1,9 @@
 package pl.coderslab.mysql.onetoone;
 
 public class Main01 {
-    private String create = "create table client_address (client_id int, city varchar(50), street varchar(50), house_nr varchar(10), primary key (client_id), foreign key (client_id) references clients(id));";
+    private String create = "create table client_address (client_id int, city varchar(50), street varchar(50), house_nr varchar(10), " +
+            "primary key (client_id), foreign key (client_id) " +
+            "references clients(id));";
 
     private String insert1 = "insert into clients (name, surname) values ('Artur 1', 'Hacia 1');";
     private String insert2 = "insert into clients (name, surname) values ('Artur 2', 'Hacia 2');";

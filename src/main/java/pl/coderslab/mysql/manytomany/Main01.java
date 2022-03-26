@@ -1,7 +1,8 @@
 package pl.coderslab.mysql.manytomany;
 
 public class Main01 {
-    private String create = "create table products_orders (id int auto_increment, product_id int, order_id int, primary key (id), foreign key (product_id) references products(id), foreign key (order_id) references orders(id));";
+    private String create = "create table products_orders (id int auto_increment, product_id int, order_id int, primary key (id), " +
+            "foreign key (product_id) references products(id), foreign key (order_id) references orders(id));";
 
     private String query1 = "insert into orders (description) values ('Opis zamówienia 1');";
     private String query2 = "insert into orders (description) values ('Opis zamówienia 2');";
